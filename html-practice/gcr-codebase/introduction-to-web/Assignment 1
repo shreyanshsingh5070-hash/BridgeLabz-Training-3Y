@@ -1,0 +1,129 @@
+Ans 1 -
+
+Frontend development is the part of web development that focuses on the user interface of a website. It includes everything that users can see and interact with, such as buttons, menus, images, text, forms, and page layouts. Frontend developers mainly use HTML, CSS, and JavaScript to create responsive and attractive web pages.
+
+Backend development is the server-side part of a website. It is responsible for processing user requests, managing user authentication, handling business logic, and communicating with databases. Backend applications are commonly built using Java, Python, PHP, or Node.js.
+
+Full-stack development combines both frontend and backend development. A full-stack developer has the knowledge to build an entire web application, including the user interface, server-side functionality, and database integration.
+
+Example: On a website like Flipkart, the homepage, product images, and search option are part of the frontend. User login, payment processing, and order management are handled by the backend. A full-stack developer can develop and maintain both the frontend and backend of the application.
+
+
+
+Ans 2 -
+
+          User
+            │
+            ▼
+      Web Browser
+            │
+      HTTP Request
+            │
+            ▼
+       Web Server
+            │
+      Process Request
+            │
+            ▼
+        Database
+            │
+       Fetch Data
+            │
+            ▼
+       Web Server
+            │
+      HTTP Response
+            │
+            ▼
+   Browser Displays Page
+
+
+
+Ans 3 -
+
+When a user enters a website URL into a browser, the browser sends an HTTP request to the web server. The server receives the request and processes it. If the requested page needs data, the server retrieves the required information from the database. After processing the request, the server sends an HTTP response containing HTML, CSS, JavaScript, and other resources. Finally, the browser renders these files and displays the webpage to the user.
+
+
+
+Ans 4 -
+
+A web development environment requires different tools to build and test websites efficiently. Visual Studio Code (VS Code) is used for writing and editing HTML, CSS, and JavaScript code. A web browser such as Google Chrome or Microsoft Edge is required to test websites. Node.js enables JavaScript to run outside the browser and supports modern development tools. Git is used for version control, while GitHub provides online storage and collaboration for projects. The Live Server extension automatically refreshes the browser whenever code changes are saved. A terminal or command prompt is also used to execute commands and manage project files.
+
+
+
+Ans 5 -
+
+A web server is software or hardware that accepts requests from web browsers and delivers web pages or application data using HTTP or HTTPS. It works as a bridge between the client and the website.
+
+Examples of commonly used web servers:
+• Apache HTTP Server
+• Nginx
+• Microsoft IIS
+• LiteSpeed Web Server
+• Apache Tomcat
+
+These web servers are widely used because they provide good speed, security, and reliability.
+
+
+
+Ans 6 -
+
+A frontend developer designs and develops the visible part of a website using HTML, CSS, and JavaScript. They ensure that the website is user-friendly, responsive, and visually appealing.
+
+A backend developer develops the server-side functionality of the application. Their responsibilities include handling user authentication, processing requests, implementing business logic, and connecting the application to the database.
+
+A Database Administrator (DBA) manages the database by designing, maintaining, securing, backing up, and optimizing data to ensure its availability and safety.
+
+
+
+Ans 7 -
+
+To set up Visual Studio Code for web development, first download and install VS Code from its official website. Next, install useful extensions such as Live Server, HTML CSS Support, and JavaScript (ES6) Snippets. Create a project folder containing three files: index.html, style.css, and script.js. Open the HTML file using the Live Server extension to preview the webpage in a browser. Finally, take a screenshot of the configured VS Code window and attach it with the assignme
+
+Ans 8 -
+
+A static website displays fixed content that remains the same for every visitor. It is generally built using HTML and CSS and does not require a database. A personal portfolio website is a common example of a static website.
+
+A dynamic website generates content according to user input or data stored in a database. It uses server-side programming languages along with databases to provide personalized content. Examples include Facebook, YouTube, and Amazon.
+
+
+
+Ans 9 -
+
+Five popular web browsers are Google Chrome, Mozilla Firefox, Microsoft Edge, Apple Safari, and Opera.
+
+Different browsers use different rendering engines to display web pages.
+
+• Google Chrome – Blink
+• Microsoft Edge – Blink
+• Opera – Blink
+• Mozilla Firefox – Gecko
+• Apple Safari – WebKit
+
+Rendering engines convert HTML, CSS, and JavaScript into the webpages users see on their screens. They differ in terms of speed, performance, browser compatibility, and support for web standards.
+
+
+
+Ans 10 -
+
+The basic web architecture consists of a client, a web server, APIs, and a database. The client sends an HTTP request to the web server. If required, the server communicates with APIs and retrieves data from the database. After processing the request, the server sends the response back to the client, where the browser displays the requested webpage.
+
+      Client (Browser)
+             │
+      HTTP Request
+             ▼
+        Web Server
+         │       │
+         │       ▼
+         │      APIs
+         │        │
+         ▼        │
+      Database  ◄─┘
+         │
+    Returns Data
+         ▼
+      Web Server
+         │
+    HTTP Response
+         ▼
+    Client (Browser)

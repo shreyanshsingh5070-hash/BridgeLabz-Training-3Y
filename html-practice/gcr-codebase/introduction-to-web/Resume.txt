@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreyansh Singh - Resume</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px auto;
+            max-width: 900px;
+            line-height: 1.5;
+            color: #222;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .contact {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #222;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+
+        h3 {
+            margin-bottom: 2px;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        ul {
+            margin-top: 5px;
+        }
+
+        a {
+            color: #222;
+            text-decoration: none;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .education-item,
+        .project-item {
+            margin-bottom: 18px;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Shreyansh Singh</h1>
+
+        <div class="contact">
+            <p>Bramasthan, Azamgarh, Uttar Pradesh</p>
+            <p>7565860064</p>
+            <p>
+                <a href="mailto:shreyanshsingh5070@gmail.com">
+                    shreyanshsingh5070@gmail.com
+                </a>
+            </p>
+            <p>
+                <a href="https://www.linkedin.com/feed/" target="_blank">
+                    LinkedIn
+                </a>
+                |
+                <a href="https://github.com/" target="_blank">
+                    GitHub
+                </a>
+            </p>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2>Education</h2>
+
+        <div class="education-item">
+            <h3>B.Tech in Computer Science</h3>
+            <p>GLA University, Mathura</p>
+            <p>2024 - 2028</p>
+            <p><span class="label">CGPA:</span> 6.99/10</p>
+        </div>
+
+        <div class="education-item">
+            <h3>Class XII (CBSE)</h3>
+            <p>GD Global School, Kartalpur, Azamgarh</p>
+            <p>2023 - 2024</p>
+            <p><span class="label">Percentage:</span> 69.5%</p>
+        </div>
+
+        <div class="education-item">
+            <h3>Class X (CBSE)</h3>
+            <p>GD Global School, Kartalpur, Azamgarh</p>
+            <p>2021 - 2022</p>
+            <p><span class="label">Percentage:</span> 83.4%</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Coursework</h2>
+
+        <ul>
+            <li>Data Structures and Algorithms</li>
+            <li>Database Management System</li>
+            <li>Cloud Architecture</li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2>Technical Skills</h2>
+
+        <p>
+            <span class="label">Languages:</span>
+            Java, Python, C, SQL
+        </p>
+
+        <p>
+            <span class="label">Developer Tools:</span>
+            VS Code, IntelliJ IDEA Ultimate
+        </p>
+
+        <p>
+            <span class="label">Technologies:</span>
+            Git, GitHub
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>Projects</h2>
+
+        <div class="project-item">
+            <h3>Building a Private Cloud using OpenNebula</h3>
+
+            <p><span class="label">Year:</span> 2025</p>
+
+            <p>
+                <span class="label">Technology:</span>
+                Python, Machine Learning, Cloud Computing
+            </p>
+
+            <ul>
+                <li>
+                    Built a cloud-based system to collect and store
+                    real-time weather data.
+                </li>
+                <li>
+                    Applied Linear Regression to predict temperature trends.
+                </li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <h3>Car Price Prediction Web App (Ongoing)</h3>
+
+            <p><span class="label">Year:</span> 2026</p>
+
+            <p>
+                <span class="label">Technology:</span>
+                Python, Flask, Machine Learning
+            </p>
+
+            <ul>
+                <li>
+                    Developing a web application to predict car prices
+                    using vehicle features.
+                </li>
+                <li>
+                    Using Linear Regression for price prediction.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Certifications</h2>
+
+        <ul>
+            <li>AWS Academy Graduate – Cloud Foundations</li>
+            <li>
+                Oracle Cloud Infrastructure 2025 –
+                Certified AI Foundations Associate
+            </li>
+        </ul>
+    </section>
+
+</body>
+</html>
