@@ -1,0 +1,31 @@
+.rajmata{
+    justify-content: center;
+    background-color: rgb(233, 72, 18);
+    color: rgb(202, 228, 228);
+    height: 50vh;
+    width: 100vh;
+    padding: 20%;
+    margin: 10%;
+    animation: spin 1s linear 0s infinite normal;
+}
+
+/* @keyframes spin
+ {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+    
+} */
+.sabkadost{
+    background-color: aqua;
+}
+.box{
+    height: 300px;
+    width: 300px;
+    /* align-self: auto; */
+    background-color: green;
+    /* justify-content: center; */
+    /* margin: 100px;
+    margin-top: 200px; */
+    border-radius: 20%;
+    display: inline-block;
+}
