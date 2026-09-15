@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    padding: 30px;
+}
+
+.container article {
+    flex: 1;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #dfeaf5;
+    border: 2px solid #9eb2c5;
+    border-radius: 10px;
+}

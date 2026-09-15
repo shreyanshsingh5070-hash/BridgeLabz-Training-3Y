@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #263238;
+}
+
+main {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.intro {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.center {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

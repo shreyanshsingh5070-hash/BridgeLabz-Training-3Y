@@ -1,0 +1,19 @@
+/* Basic element, class, ID and descendant selectors */
+p {
+    font-size: 18px;
+}
+
+.highlight {
+    background-color: #fff0a8;
+    padding: 10px;
+}
+
+#special {
+    color: #9b2c2c;
+    font-weight: bold;
+}
+
+div p {
+    border-left: 4px solid #356da8;
+    padding-left: 12px;
+}
