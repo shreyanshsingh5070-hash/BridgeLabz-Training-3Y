@@ -1,0 +1,78 @@
+/* ---------- Reset (no box-sizing here on purpose, so we can
+   demonstrate the default content-box behavior below) ---------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f5f7;
+  color: #23262b;
+}
+
+/* Flexbox centers both box-model demonstrations on the page */
+.stage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.box-demo {
+  text-align: center;
+}
+
+.box-demo h2 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #1f2933;
+}
+
+.layer-label {
+  font-size: 0.7rem;
+  color: #565b63;
+  margin-bottom: 0.2rem;
+}
+
+/* Outermost layer: margin (space outside the border, shown with an outline) */
+.margin-layer {
+  outline: 2px dashed #b8562f;
+  padding: 24px; /* visually represents the margin space */
+  display: inline-block;
+  background-color: #fbe9de;
+}
+
+/* Border layer: the visible edge of the element */
+.border-layer {
+  border: 10px solid #2f4f7a;
+  background-color: #dbe3ef;
+  display: inline-block;
+  /* default box-sizing: content-box — width/height apply to content only,
+     so border and padding ADD to the final rendered size */
+  width: 160px;
+}
+
+/* Padding layer: space between the border and the actual content */
+.padding-layer {
+  padding: 20px;
+  background-color: #eef0f8;
+}
+
+/* Innermost layer: the actual content box */
+.content-layer {
+  background-color: #2f6f4f;
+  color: #ffffff;
+  padding: 1rem;
+  font-size: 0.85rem;
+  border-radius: 4px;
+}
+
+/* box-sizing: border-box — width/height now INCLUDE border and padding,
+   so the box does not grow past the declared width */
+.border-box-demo {
+  box-sizing: border-box;
+}

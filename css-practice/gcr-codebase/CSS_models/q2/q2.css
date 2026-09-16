@@ -1,0 +1,61 @@
+/* ---------- Reset ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #23262b;
+}
+
+/* Flexbox centers all boxes both vertically and horizontally */
+.stage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: #f1f2f5;
+  padding: 2rem;
+}
+
+.size-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+/* Box 1: fixed pixel dimensions */
+.box-px {
+  width: 200px;
+  height: 120px;
+  background-color: #2f6f4f;
+}
+
+/* Box 2: percentage width (relative to the flex container),
+   min-height guarantees a floor even with little content */
+.box-percent {
+  width: 50%;
+  max-width: 260px;
+  min-height: 150px;
+  background-color: #b8562f;
+}
+
+/* Box 3: viewport-relative height (vh) and em-based max-width.
+   overflow: auto adds a scrollbar once content exceeds the box */
+.box-vh-em {
+  height: 30vh;
+  max-width: 20em;
+  overflow: auto;
+  background-color: #2f4f7a;
+  flex-direction: column;
+  gap: 0.5rem;
+}

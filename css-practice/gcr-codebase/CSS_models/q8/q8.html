@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Model Exploration</title>
+  <link rel="stylesheet" href="q8.css">
+</head>
+<body>
+  <main class="stage">
+    <section class="box-demo">
+      <h2>content-box (default)</h2>
+      <div class="margin-layer">
+        <p class="layer-label">margin</p>
+        <div class="border-layer">
+          <p class="layer-label">border</p>
+          <div class="padding-layer">
+            <p class="layer-label">padding</p>
+            <div class="content-layer">content</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="box-demo">
+      <h2>box-sizing: border-box</h2>
+      <div class="margin-layer">
+        <p class="layer-label">margin</p>
+        <div class="border-layer border-box-demo">
+          <p class="layer-label">border</p>
+          <div class="padding-layer">
+            <p class="layer-label">padding</p>
+            <div class="content-layer">content</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

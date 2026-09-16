@@ -1,0 +1,80 @@
+/* ---------- Reset ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f5f7;
+  color: #23262b;
+}
+
+/* Flexbox row arranges the three cards in a single line */
+.card-row {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 2rem;
+  min-height: 100vh;
+  padding: 3rem 2rem;
+}
+
+.depth-card {
+  flex: 1;
+  max-width: 260px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.75rem 1.5rem;
+  text-align: center;
+  /* transitions the box-shadow smoothly on hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.depth-card h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+  /* text-shadow adds depth to the heading */
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+.depth-card p {
+  font-size: 0.9rem;
+  color: #565b63;
+  line-height: 1.5;
+}
+
+/* Soft, close shadow */
+.card-soft {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card-soft:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Sharp, tighter shadow */
+.card-sharp {
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card-sharp:hover {
+  transform: translateY(-8px);
+  box-shadow: 6px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* Layered shadow: two stacked shadows for extra depth */
+.card-layered {
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.15),
+    0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-layered:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.15),
+    0 20px 30px rgba(0, 0, 0, 0.18);
+}

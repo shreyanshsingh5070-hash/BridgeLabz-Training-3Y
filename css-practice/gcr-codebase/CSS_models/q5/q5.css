@@ -1,0 +1,152 @@
+/* ---------- Reset ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f8f7f4;
+  color: #23262b;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1f2933;
+  color: #ffffff;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #1f2933;
+}
+
+/* ---------- 1. Attribute selectors ---------- */
+
+/* Matches inputs with type="text" exactly */
+input[type="text"] {
+  border: 2px solid #2f6f4f;
+}
+
+/* Matches links whose href starts with "https" */
+a[href^="https"] {
+  color: #2f6f4f;
+  font-weight: 600;
+}
+
+/* Matches links whose href starts with "http" but not https (falls through) */
+a[href^="http"]:not([href^="https"]) {
+  color: #b8562f;
+}
+
+.form-demo input {
+  display: block;
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid #cfd2d8;
+  border-radius: 4px;
+}
+
+.form-demo a {
+  display: block;
+  margin-bottom: 0.4rem;
+  text-decoration: none;
+}
+
+/* ---------- 2. Pseudo-classes ---------- */
+
+/* :hover changes background on list items */
+.item-list li:hover {
+  background-color: #eef0f3;
+}
+
+/* :nth-child(even) stripes alternate rows */
+.item-list li:nth-child(even) {
+  background-color: #f4f5f7;
+}
+
+.item-list li {
+  list-style: none;
+  padding: 0.6rem 0.8rem;
+  transition: background-color 0.2s ease;
+}
+
+/* :focus changes the button outline color */
+button:focus {
+  outline: 3px solid #2f6f9c;
+  outline-offset: 2px;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #1f2933;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* ---------- 3. Pseudo-elements ---------- */
+
+/* ::before adds a marker before each heading */
+section h2::before {
+  content: "» ";
+  color: #b8562f;
+}
+
+/* ::after adds a small note after the section title */
+.list-demo h2::after {
+  content: " (hover or tab through the items)";
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #8a8f97;
+}
+
+/* ---------- 4. Combinators ---------- */
+
+.parent {
+  border: 1px solid #e5e3de;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+/* Child combinator (>): only direct <p> children of .parent */
+.parent > p {
+  color: #2f4f7a;
+  font-weight: 600;
+}
+
+/* Adjacent sibling combinator (+): the span immediately after the first <p> */
+.parent p + span {
+  display: inline-block;
+  margin: 0.4rem 0;
+  color: #b8562f;
+}
+
+/* General sibling combinator (~): any <em> that follows a <p> at the same level */
+.parent p ~ em {
+  display: block;
+  color: #7a2f6f;
+}
+
+/* Descendant combinator (space): any <p> anywhere inside .parent
+   (already covered above, kept distinct via specificity for clarity) */
+.parent p {
+  margin-bottom: 0.3rem;
+}

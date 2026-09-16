@@ -1,0 +1,93 @@
+/* ---------- Reset ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f6f5f2;
+  color: #23262b;
+}
+
+header,
+footer {
+  text-align: center;
+  padding: 1.25rem;
+  background-color: #1f2933;
+  color: #ffffff;
+}
+
+/* ---------- Flexbox row: aligns all boxes horizontally ---------- */
+.box-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 3rem 2rem;
+}
+
+/* Base box: each box uses a different padding value to show
+   how internal spacing changes the visual size of the box */
+.demo-box {
+  width: 150px;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 0.9rem;
+  /* smooth transition for the hover border-color change below */
+  transition: border-color 0.3s ease;
+}
+
+/* Solid border, small padding */
+.solid-border {
+  border: 4px solid #2f6f4f;
+  padding: 0.75rem;
+}
+
+.solid-border:hover {
+  border-color: #17402c;
+}
+
+/* Dashed border, medium padding */
+.dashed-border {
+  border: 4px dashed #b8562f;
+  padding: 1.25rem;
+}
+
+.dashed-border:hover {
+  border-color: #7a3a1f;
+}
+
+/* Double border, larger padding */
+.double-border {
+  border: 6px double #2f4f7a;
+  padding: 1.75rem;
+}
+
+.double-border:hover {
+  border-color: #1a2c47;
+}
+
+/* Groove border with rounded corners */
+.groove-border {
+  border: 6px groove #7a2f6f;
+  padding: 1.25rem;
+  border-radius: 10px;
+}
+
+.groove-border:hover {
+  border-color: #4a1c44;
+}
+
+/* Rounded corners example: large border-radius on a solid border */
+.rounded-border {
+  border: 4px solid #b39a2f;
+  padding: 1.5rem;
+  border-radius: 50%;
+}
+
+.rounded-border:hover {
+  border-color: #7a671f;
+}

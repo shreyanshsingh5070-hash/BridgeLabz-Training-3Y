@@ -1,0 +1,64 @@
+/* ---------- Reset ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f1f2f5;
+  color: #23262b;
+}
+
+/* Flexbox arranges the four demo items horizontally */
+.transform-row {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.transform-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.box {
+  width: 90px;
+  height: 90px;
+  background-color: #2f6f9c;
+  border-radius: 6px;
+  /* transition: all animates whichever transform property changes on hover */
+  transition: all 0.4s ease;
+}
+
+.transform-item p {
+  font-size: 0.85rem;
+  color: #565b63;
+}
+
+/* rotate(): turns the box 45 degrees */
+.box-rotate:hover {
+  transform: rotate(45deg);
+}
+
+/* scale(): grows the box to 1.3x its size */
+.box-scale:hover {
+  transform: scale(1.3);
+}
+
+/* translate(): moves the box along the x and y axis */
+.box-translate:hover {
+  transform: translate(20px, -15px);
+}
+
+/* skew(): slants the box along the x axis */
+.box-skew:hover {
+  transform: skew(20deg, 5deg);
+}

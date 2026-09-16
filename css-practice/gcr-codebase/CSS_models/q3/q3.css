@@ -1,0 +1,65 @@
+/* ---------- Reset ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #ffffff;
+}
+
+/* Fixed header/footer: stay pinned while the sections scroll behind them */
+.fixed-header,
+.fixed-footer {
+  position: sticky;
+  z-index: 2;
+  background-color: #1f2933;
+  text-align: center;
+  padding: 1.1rem;
+}
+
+.fixed-header {
+  top: 0;
+}
+
+.fixed-footer {
+  bottom: 0;
+}
+
+.gradient-section {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.section-text {
+  max-width: 480px;
+}
+
+.section-text h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.6rem;
+}
+
+.section-text p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Linear gradient: diagonal color transition.
+   background-attachment: fixed keeps the gradient still while the
+   page content scrolls over it, creating a parallax-like feel */
+.linear-section {
+  background: linear-gradient(135deg, #4a2f7a, #2f6f9c);
+  background-attachment: fixed;
+}
+
+/* Radial gradient: color radiates outward from the center */
+.radial-section {
+  background: radial-gradient(circle at center, #b8562f, #3a1f1a);
+}

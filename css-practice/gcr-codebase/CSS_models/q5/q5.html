@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced CSS Selectors</title>
+  <link rel="stylesheet" href="q5.css">
+</head>
+<body>
+  <header>
+    <h1>Advanced Selectors Demonstration</h1>
+  </header>
+
+  <main>
+    <section class="form-demo">
+      <h2>Attribute Selectors</h2>
+      <input type="text" placeholder="Text input" value="">
+      <input type="email" placeholder="Email input">
+      <a href="https://example.com">Secure link (https)</a>
+      <a href="http://example.com">Insecure link (http)</a>
+    </section>
+
+    <section class="list-demo">
+      <h2>Pseudo-classes &amp; Pseudo-elements</h2>
+      <ul class="item-list">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>Fourth item</li>
+      </ul>
+      <button>Focusable Button</button>
+    </section>
+
+    <section class="combinator-demo">
+      <h2>Combinators</h2>
+      <div class="parent">
+        <p>Direct child paragraph (&gt;)</p>
+        <span>Adjacent sibling span (+)</span>
+        <p>Descendant paragraph</p>
+        <em>General sibling em (~)</em>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

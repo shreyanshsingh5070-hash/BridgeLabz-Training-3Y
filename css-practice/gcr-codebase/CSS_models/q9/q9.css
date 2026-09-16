@@ -1,0 +1,110 @@
+/* ---------- Reset ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f6f5f2;
+  color: #23262b;
+}
+
+.form-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.contact-form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem; /* uniform spacing between form elements */
+}
+
+.contact-form h1 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+label {
+  font-size: 0.85rem;
+  color: #565b63;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #d5d8dd;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  resize: vertical;
+  /* default outline is removed so we can demonstrate a custom one on focus */
+  outline: none;
+  transition: outline-color 0.2s ease, outline-offset 0.2s ease;
+}
+
+/* Distinct default outline styles per field, offset away from the border */
+.outline-solid {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.outline-dashed {
+  outline: 2px dashed transparent;
+  outline-offset: 3px;
+}
+
+.outline-dotted {
+  outline: 2px dotted transparent;
+  outline-offset: 4px;
+}
+
+/* :focus changes each outline's color, keeping its own style/offset */
+.outline-solid:focus {
+  outline-color: #2f6f9c;
+  border-color: #2f6f9c;
+}
+
+.outline-dashed:focus {
+  outline-color: #b8562f;
+  border-color: #b8562f;
+}
+
+.outline-dotted:focus {
+  outline-color: #2f6f4f;
+  border-color: #2f6f4f;
+}
+
+button {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #1f2933;
+  color: #ffffff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #323d4c;
+}
+
+button:focus {
+  outline: 3px solid #2f6f9c;
+  outline-offset: 2px;
+}
