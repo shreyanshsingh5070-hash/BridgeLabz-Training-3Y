@@ -1,0 +1,8 @@
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; justify-content: center; align-items: center; font-family: Arial, sans-serif; background: #f0fdf4; }
+main { text-align: center; width: min(850px, 92%); }
+.comparison { display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; margin: 35px 0; }
+.demo { width: 260px; height: 180px; padding: 30px; border: 12px solid #166534; outline: 6px dashed #f59e0b; outline-offset: 8px; background: #bbf7d0; margin: 25px; display: grid; place-items: center; }
+.default { box-sizing: content-box; }
+.border-box { box-sizing: border-box; }
+.demo div { background: #86efac; padding: 20px; border: 2px solid #14532d; }

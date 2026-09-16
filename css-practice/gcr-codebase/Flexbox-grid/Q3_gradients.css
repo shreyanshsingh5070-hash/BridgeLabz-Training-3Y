@@ -1,0 +1,8 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: white; }
+header, footer { position: fixed; left: 0; width: 100%; text-align: center; padding: 14px; background: #111827; z-index: 2; }
+header { top: 0; } footer { bottom: 0; }
+main { padding-top: 70px; padding-bottom: 55px; }
+section { min-height: 70vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 30px; }
+.linear { background: linear-gradient(120deg, #2563eb, #7c3aed, #db2777); }
+.radial { background: radial-gradient(circle, #f59e0b, #dc2626, #7f1d1d); background-attachment: fixed; }

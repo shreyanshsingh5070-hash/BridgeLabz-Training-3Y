@@ -1,0 +1,23 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 30px; font-family: Arial, sans-serif; background: #f1f5f9; }
+.card { max-width: 700px; margin: auto; padding: 30px; background: white; border-radius: 16px; }
+/* Attribute selector: text inputs. */
+input[type="text"] { border: 3px solid #2563eb; }
+/* Attribute selector: links beginning with https. */
+a[href^="https"] { color: #15803d; }
+/* Pseudo-classes: hover, focus and nth-child. */
+a:hover { text-decoration: none; background: #dcfce7; }
+input:focus { outline: 3px solid #fbbf24; }
+.items li:nth-child(odd) { background: #e0e7ff; }
+/* Pseudo-elements: add content before and after. */
+h1::before { content: "★ "; }
+h1::after { content: " ★"; }
+/* Child combinator > */
+.card > .intro { font-weight: bold; }
+/* Descendant combinator: paragraphs inside .siblings. */
+.siblings p { padding: 8px; }
+/* Adjacent sibling combinator + */
+.siblings span + p { border-left: 4px solid #7c3aed; }
+/* General sibling combinator ~ */
+.siblings span ~ p { margin-left: 10px; }
+input, a { margin: 8px; padding: 10px; }

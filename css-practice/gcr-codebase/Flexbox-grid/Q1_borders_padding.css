@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f7fb; color: #222; }
+header, footer { text-align: center; padding: 20px; }
+.boxes { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 30px; }
+.box { width: 210px; min-height: 150px; background: white; border-width: 6px; border-color: #334155; transition: border-color 0.3s ease; }
+.solid { border-style: solid; padding: 10px; }
+.dashed { border-style: dashed; padding: 20px; }
+.double { border-style: double; padding: 30px; }
+.groove { border-style: groove; padding: 40px; }
+.rounded { border-radius: 25px; }
+.box:hover { border-color: #e11d48; }
