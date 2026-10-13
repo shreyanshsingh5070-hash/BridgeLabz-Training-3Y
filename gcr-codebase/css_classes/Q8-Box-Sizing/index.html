@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing Comparison</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Box-Sizing Comparison</h1>
+        <p>Both boxes use the same width and padding, but their total sizes are different.</p>
+        <section class="comparison">
+            <article class="box content-box">
+                <h2>content-box</h2>
+                <p>The width applies to the content. Padding and border are added outside it.</p>
+            </article>
+            <article class="box border-box">
+                <h2>border-box</h2>
+                <p>The width includes the content, padding and border together.</p>
+            </article>
+        </section>
+        <p class="note">The two boxes have the same CSS width, but content-box takes up more space overall.</p>
+    </main>
+</body>
+</html>

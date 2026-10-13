@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: #26324b;
+    background: linear-gradient(135deg, #dfe9ff, #f9e8f2);
+}
+
+.panel {
+    width: 100%;
+    max-width: 650px;
+    padding: 35px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 12px 35px #29365b20;
+}
+
+h1, p {
+    text-align: center;
+}
+
+p {
+    color: #68748a;
+    line-height: 1.5;
+}
+
+.search-row {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 25px;
+}
+
+input, select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccd4e3;
+    border-radius: 8px;
+    font: inherit;
+    background: white;
+}
+
+input:focus, select:focus {
+    outline: 3px solid #d7e2ff;
+    border-color: #4269cc;
+}
+
+button {
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 8px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.search-row button, .main-button {
+    color: white;
+    background: #315cc5;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+.search-row button:hover, .main-button:hover {
+    background: #23459a;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 22px 0;
+}
+
+.light-button {
+    color: #315cc5;
+    background: #eaf0ff;
+}
+
+.light-button:hover {
+    background: #d9e4ff;
+}
+
+.select-area {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+@media (max-width: 500px) {
+    .panel {
+        padding: 23px;
+    }
+}
