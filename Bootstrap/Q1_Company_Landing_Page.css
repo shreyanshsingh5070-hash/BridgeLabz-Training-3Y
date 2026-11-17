@@ -1,0 +1,5 @@
+/* Q1: Bootstrap grid classes (.container, .row, .col-lg-*) create responsive columns. */
+body { font-family: Arial, sans-serif; }
+.site-header { background: #10243a; }
+.hero-section { color: #fff; background: linear-gradient(120deg, #10243a, #176b87); }
+.hero-section img { min-height: 280px; object-fit: cover; }

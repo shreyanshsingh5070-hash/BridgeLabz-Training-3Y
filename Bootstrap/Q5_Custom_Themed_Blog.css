@@ -1,0 +1,14 @@
+/* Q5: Custom Bootstrap CSS variables theme the primary color and font site-wide. */
+:root {
+  --bs-primary: #8a4f3d;
+  --bs-primary-rgb: 138, 79, 61;
+  --bs-font-sans-serif: "DM Sans", sans-serif;
+}
+body { font-family: var(--bs-font-sans-serif); background: #fbf8f4; color: #332a26; }
+h1, h2, .navbar-brand { font-family: "Playfair Display", serif; }
+.blog-header, .blog-footer { background: #eee3d8; }
+.blog-card { border: 0; box-shadow: 0 .4rem 1.2rem rgba(60,40,30,.08); transition: transform .2s ease; }
+.blog-card:hover { transform: translateY(-4px); }
+.blog-card img { height: 250px; object-fit: cover; }
+.theme-badge { background: #8a4f3d; }
+.btn-primary { --bs-btn-bg: #8a4f3d; --bs-btn-border-color: #8a4f3d; --bs-btn-hover-bg: #693a2d; --bs-btn-hover-border-color: #693a2d; }

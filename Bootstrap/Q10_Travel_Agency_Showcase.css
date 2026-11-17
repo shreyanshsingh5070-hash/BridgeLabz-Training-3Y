@@ -1,0 +1,4 @@
+/* Q10: Carousel needs Bootstrap's bundle JS; .progress-bar-striped and .progress-bar-animated style progress. */
+.travel-header { background: #102b3f; }
+.destination-image { height: min(62vw, 560px); min-height: 300px; object-fit: cover; }
+.carousel-caption { background: rgba(0,0,0,.42); border-radius: .75rem; padding: 1rem; }

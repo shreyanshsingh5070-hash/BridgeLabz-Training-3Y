@@ -1,0 +1,3 @@
+/* Q6: .alert-* styles contextual notifications; .card groups content; .bg-light + .border forms a summary well. */
+body { background: #f5f7fa; }
+.summary-well strong { color: #263c58; }

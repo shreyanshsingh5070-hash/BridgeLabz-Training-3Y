@@ -1,0 +1,3 @@
+/* Q7: .list-group organizes tasks; .badge and .rounded-pill show priority and pending count. */
+body { background: #f7f9fc; }
+.list-group-item { padding: 1rem 1.25rem; }

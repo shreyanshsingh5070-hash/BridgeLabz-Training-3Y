@@ -1,0 +1,3 @@
+/* Q9: .pagination and .justify-content-center align Bootstrap page navigation. */
+.page-link { color: #425b76; }
+.page-item.active .page-link { background: #425b76; border-color: #425b76; }

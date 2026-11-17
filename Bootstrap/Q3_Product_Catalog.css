@@ -1,0 +1,4 @@
+/* Q3: col-12 / col-sm-6 / col-md-3 gives 1, 2 and 4 columns at responsive breakpoints. */
+.product-card { transition: transform .2s ease, box-shadow .2s ease; }
+.product-card:hover { transform: translateY(-5px); box-shadow: 0 1rem 2rem rgba(0,0,0,.12) !important; }
+.product-card img { height: 180px; object-fit: cover; }
