@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Dropdown</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; }
+    #dropdown { position: relative; display: inline-block; }
+    #dropdownButton { padding: 10px 18px; cursor: pointer; }
+    #options { display: none; position: absolute; top: 100%; left: 0; min-width: 160px; padding: 0; margin: 0; list-style: none; border: 1px solid #aaa; background: white; z-index: 2; }
+    #options.open { display: block; }
+    #options li { padding: 9px 12px; cursor: pointer; color: #222; }
+    #options li:hover { background: #eee; }
+  </style>
+</head>
+<body>
+  <h2>Custom JavaScript Dropdown</h2>
+  <div id="dropdown">
+    <button id="dropdownButton" type="button">Select an option</button>
+    <ul id="options">
+      <li data-value="JavaScript">JavaScript</li>
+      <li data-value="HTML">HTML</li>
+      <li data-value="CSS">CSS</li>
+      <li data-value="Node.js">Node.js</li>
+    </ul>
+  </div>
+  <script src="Q8_Custom_Dropdown.js"></script>
+</body>
+</html>

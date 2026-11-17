@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Submit Blocker</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; }
+    label { display: block; margin-top: 12px; }
+    input { display: block; padding: 8px; width: 260px; margin-top: 5px; }
+    .error { color: #c00020; font-size: 14px; }
+    #success { color: green; }
+  </style>
+</head>
+<body>
+  <h2>Registration Form</h2>
+  <form id="registrationForm" novalidate>
+    <label>Name <input id="name" type="text"></label>
+    <span class="error" id="nameError"></span>
+    <label>Email <input id="email" type="text"></label>
+    <span class="error" id="emailError"></span>
+    <label>Password <input id="password" type="password"></label>
+    <span class="error" id="passwordError"></span>
+    <p><button type="submit">Submit</button></p>
+  </form>
+  <p id="success" role="status"></p>
+  <script src="Q9_Form_Submit_Blocker.js"></script>
+</body>
+</html>

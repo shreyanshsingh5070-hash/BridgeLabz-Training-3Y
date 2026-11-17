@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery Modal</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 25px; }
+    .gallery { display: grid; grid-template-columns: repeat(3, minmax(120px, 1fr)); gap: 12px; max-width: 700px; }
+    .gallery img { width: 100%; height: 150px; object-fit: cover; cursor: pointer; border-radius: 6px; }
+    .modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.8); align-items: center; justify-content: center; padding: 20px; }
+    .modal.open { display: flex; }
+    .modal-content { max-width: 90vw; max-height: 90vh; }
+    .modal-content img { max-width: 90vw; max-height: 85vh; }
+  </style>
+</head>
+<body>
+  <h2>Image Gallery</h2>
+  <div class="gallery" id="gallery">
+    <img src="https://picsum.photos/id/1015/600/400" alt="Mountain landscape">
+    <img src="https://picsum.photos/id/1016/600/400" alt="Forest landscape">
+    <img src="https://picsum.photos/id/1025/600/400" alt="Dog">
+    <img src="https://picsum.photos/id/1035/600/400" alt="Coastline">
+    <img src="https://picsum.photos/id/1043/600/400" alt="Mountain lake">
+    <img src="https://picsum.photos/id/1069/600/400" alt="Nature">
+  </div>
+  <div class="modal" id="imageModal">
+    <div class="modal-content" id="modalContent">
+      <img id="largeImage" src="" alt="Large preview">
+    </div>
+  </div>
+  <script src="Q5_Image_Gallery_Modal.js"></script>
+</body>
+</html>

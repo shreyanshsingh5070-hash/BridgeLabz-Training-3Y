@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Student Filter</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 30px; }
+    input { padding: 8px; width: 280px; margin-bottom: 12px; }
+    table { border-collapse: collapse; width: 500px; max-width: 100%; }
+    th, td { border: 1px solid #aaa; padding: 9px; text-align: left; }
+    #noResults { color: #b00020; }
+  </style>
+</head>
+<body>
+  <h2>Student Table Filter</h2>
+  <input id="searchInput" type="text" placeholder="Search name, branch or CGPA">
+  <table>
+    <thead><tr><th>Name</th><th>Branch</th><th>CGPA</th></tr></thead>
+    <tbody id="studentRows">
+      <tr><td>Rahul Sharma</td><td>CSE</td><td>8.5</td></tr>
+      <tr><td>Priya Singh</td><td>ECE</td><td>9.1</td></tr>
+      <tr><td>Aman Verma</td><td>CSE</td><td>7.8</td></tr>
+      <tr><td>Neha Gupta</td><td>IT</td><td>8.9</td></tr>
+      <tr><td>Arjun Kumar</td><td>ME</td><td>7.5</td></tr>
+    </tbody>
+  </table>
+  <p id="noResults" hidden>No results found</p>
+  <script src="Q6_Real_Time_Table_Filter.js"></script>
+</body>
+</html>
